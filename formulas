@@ -1,0 +1,22 @@
+Set(
+    varSearchResults,
+    SearchinDocuments.Run(
+        Coalesce(
+            txtSearch.Text,
+            "*"
+        ),
+        drpPaginationSize.Selected.Value,
+        varFrom
+    )
+);
+Set(
+    varTotalCount,
+    varSearchResults.totalrows
+);
+Set(
+    varTotalCount,
+    varSearchResults.rowcount
+);
+
+
+--------------------------
