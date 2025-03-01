@@ -175,3 +175,9 @@ LookUp(
     Table(ThisItem.Value.Cells),
     ThisRecord.Value.Key = "FileName"
 ).Value.Value
+
+
+
+----------------------------------------
+
+/_api/search/query?querytext=%27*@{triggerBody()['text']}*%20contentclass:STS_ListItem_DocumentLibrary%20path:%22https://asifwaquar.sharepoint.com/sites/mhc/Shared%20Documents*%22%20path:%22https://asifwaquar.sharepoint.com/sites/mhc/doc/*%22%27&RowLimit=@{triggerBody()['text_1']}&STARTROW=@{triggerBody()['text_2']}&selectproperties=%27Title,listitemid,Author,size,path,PictureThumbnailURL,FileExtension,ViewsLifeTime,IsDocument,ServerRedirectedEmbedURL,ServerRedirectedPreviewURL,ServerRedirectedURL,FileType,FileName,DocumentLink%27
